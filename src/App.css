@@ -1,6 +1,7 @@
 h2,h3, h5, p {
   color: white;
 }
+
 .App {
  display: flex;
  flex-direction: column;
@@ -104,13 +105,30 @@ h2,h3, h5, p {
 .App-down-img{
   z-index: 1000;
 }
-
-@media(max-width :550px){
+@media (max-width: 400px){
+  .App-box-img{
+    object-position: center top
+  }
+  .App-down{
+    margin-top: -121px;
+  }
+  .App-box-left{
+   position: absolute;
+   top: 20%;            
+   left:10%; 
+  }
+  .App-box-right{
+    position: absolute;
+    top: 20%;            
+    right:10%; 
+  }
+}
+@media(min-width: 400px) and (max-width :550px){
 .App-box-img{
   object-position: center 
 }
 .App-down{
-  margin-top: -102px;
+  margin-top: -95px;
 }
 .App-box-left{
  position: absolute;
@@ -122,4 +140,75 @@ h2,h3, h5, p {
   top: 20%;            
   right:10%; 
 }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .App-box-img{
+    object-position: center 
+  }
+  .App-down{
+    margin-top: -84px;
+  }
+  .App-box-left{
+   position: absolute;
+   top: 20%;            
+   left:10%; 
+  }
+  .App-box-right{
+    position: absolute;
+    top: 20%;            
+    right:10%; 
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .App-box-img{
+    object-position: center 
+  }
+  .App-down{
+    margin-top: -70px;
+  }
+  .App-box-left{
+   position: absolute;
+   top: 20%;            
+   left:10%; 
+  }
+  .App-box-right{
+    position: absolute;
+    top: 20%;            
+    right:10%; 
+  }
+}
+@media (min-width: 1000px) and (max-width: 1050px) {
+  h2,h3 {
+    font-size: 80px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  p ,input{
+    font-size: 30px;
+  }
+  button, input{
+    font-size: 25px;
+  }
+  .App-down-img{
+    width: 150px;
+    height: auto;
+  }
+
+  .App-box-img{
+    object-position: center 
+  }
+  .App-down{
+    margin-top: -178px;
+  }
+  .App-box-left{
+   position: absolute;
+   top: 10%;            
+   left:10%; 
+  }
+  .App-box-right{
+    position: absolute;
+    top: 10%;            
+    right:10%; 
+  }
 }

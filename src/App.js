@@ -78,7 +78,7 @@ function App() {
   return (
     <div className="App">
         <div className='App-top'>
-          <input style={{borderRadius:"8px"}} placeholder='Enter Location' onChange={(event)=> setNameInput(event.target.value)}></input>
+          <input style={{borderRadius:"8px", justifyContent:"center"}} placeholder='Enter Location' onChange={(event)=> setNameInput(event.target.value)}></input>
           <button onClick={fethApi}>Ok</button>
 
         </div>
